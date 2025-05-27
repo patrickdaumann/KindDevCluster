@@ -24,7 +24,7 @@ Bootstrap a Development Kubernetes Cluster with KIND
 
    ```bash
    helm repo add k8s_gateway https://ori-edge.github.io/k8s_gateway/
-   helm install exdns --set domain=pdn.lab k8s_gateway/k8s-gateway
+   helm install exdns --set domain=cluster.dev k8s_gateway/k8s-gateway
    ```
 
 5. **Configure Local DNS Resolution on macOS**  
