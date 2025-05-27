@@ -40,3 +40,5 @@ Bootstrap a Development Kubernetes Cluster with KIND
    port 53
    EOF
    ```
+
+6. **(optional) Trust the CA Certificate with your mac**
