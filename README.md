@@ -6,8 +6,10 @@ Bootstrap a Development Kubernetes Cluster with KIND
 1. **Set Kind Cluster Type**  
    Predefined configs are available in `bootstrap/kind-config`.
 
-2. **Verify LoadBalancer IP Address Pool**  
-   Check `bootstrap/metallb/ipaddresspool.yaml` to ensure the IP range matches your local network.
+2. **Verify LoadBalancer IP Address Pool**
+   1. Check `bootstrap/metallb/ipaddresspool.yaml` to ensure the IP range matches your local network.
+   2. run "docker inspect network kind" to check your Pod Network
+   3. Network Address is listed under IPAM.Config.Subnet -> Choose an IP Range within this Subnet.
 
 3. **Create a CA Certificate**  
    Adjust the `-subj` string to match your organization's requirements.
